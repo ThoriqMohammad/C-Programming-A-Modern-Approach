@@ -8,7 +8,9 @@ My solutions to K.N. King's "C Programming: A Modern Approach" book.
 ## How to Run
 
 cd Chapter-02
+
 gcc ProgrammingProject2-1.c -o program
+
 ./program
 
 
