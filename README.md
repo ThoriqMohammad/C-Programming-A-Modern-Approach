@@ -84,4 +84,5 @@ Happy coding! 🚀
 - ✅ **Proper sections** with clear headers
 - ✅ **Clean formatting** throughout
 
-**Just copy and paste exactly what I provided above.** Don't modify it, don't add to it. That's the complete, correct README.md that will display properly on GitHub.
+**Just copy and paste exactly what I provided above.
+** Don't modify it, don't add to it. That's the complete, correct README.md that will display properly on GitHub.
