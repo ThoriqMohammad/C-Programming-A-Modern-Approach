@@ -3,7 +3,7 @@
 My solutions to K.N. King's "C Programming: A Modern Approach" book.
 
 ## What's Here
-- Chapter 2: Programming Project 2-2 solution
+- Chapter 2: Programming Project 2 solution
 
 ## How to Run
 
