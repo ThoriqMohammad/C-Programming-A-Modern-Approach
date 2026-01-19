@@ -1,6 +1,6 @@
 # C Programming Solutions
 
-My solutions to K.N. King's "C Programming: A Modern Approach" book.
+My solutions to K.N. King's "C Programming: A Modern Approach" book, chapter 2, programming project 3.
 
 ## What's Here
 - Chapter 2: Programming Project 3 solution
