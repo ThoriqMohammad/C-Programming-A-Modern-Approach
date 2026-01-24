@@ -1,15 +1,15 @@
 # C Programming Solutions
 
-My solutions to K.N. King's "C Programming: A Modern Approach" book, chapter 2, programming project 6.
+My solutions to K.N. King's "C Programming: A Modern Approach" book, chapter 2, programming project 8.
 
 ## What's Here
-- Chapter 2: Programming Project 7 solution
+- Chapter 2: Programming Project 8 solution
 
 ## How to Run
 
 cd Chapter-02
 
-gcc ProgrammingProject2-7.c -o program
+gcc ProgrammingProject2-8.c -o program
 
 ./program
 
