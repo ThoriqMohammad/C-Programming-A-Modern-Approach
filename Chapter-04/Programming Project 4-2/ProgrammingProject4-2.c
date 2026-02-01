@@ -18,4 +18,11 @@ int main()
     e = c / 10; // e = 4
     printf("The reversal is: %d%d%d\n", b, d, e);
     return 0;
+
+    // Another way, according to the official solution is
+
+    // int n;
+    //printf("Enter a three-digit number: ");
+    //scanf("%d", &n);
+    //printf("The reversal is %d%d%d\n", n % 10, (n/10) % 10, n/100);
 }
