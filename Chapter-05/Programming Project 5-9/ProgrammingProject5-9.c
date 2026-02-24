@@ -26,10 +26,10 @@ int main()
     int date2 = year2 * 10000 + month2 * 100 + day2;
     
     if (date1 < date2) {
-        printf("%d/%d/%d is earlier than %d/%d/%d\n", month1, day1, year1, month2, day2, year2);
+        printf("%d/%d/%.2d is earlier than %d/%d/%.2d\n", month1, day1, year1, month2, day2, year2);
     }
     else if (date1 > date2) {
-        printf("%d/%d/%d is earlier than %d/%d/%d\n", month2, day2, year2, month1, day1, year1);
+        printf("%d/%d/%.2d is earlier than %d/%d/%.2d\n", month2, day2, year2, month1, day1, year1);
     }
     else {
         printf("Both dates are the same!\n");
