@@ -45,7 +45,7 @@ int main(void)
     {
         printf("%10d%10d\n", i, square);
         
-        square += odd
+        square += odd;
     }
     square += odd;
     
