@@ -16,27 +16,43 @@
 #include <stdio.h>
 
 int main(void) {
-    // Array of point values for letters A through Z (index 0 = 'A', 25 = 'Z')
-    int points[26] = {
-        1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3,  // A-M
-        1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10   // N-Z
-    };
-
-    char word[100];   // buffer to hold the input word (assume max 99 chars)
+    char ch;
     int total = 0;
 
     printf("Enter a word: ");
-    scanf("%s", word);   // read a single word (no spaces)
 
-    // Loop through each character of the word
-    for (int i = 0; word[i] != '\0'; i++) {
-        char ch = toupper(word[i]);   // convert to uppercase
+    // Read characters one by one until newline
+    while ((ch = getchar()) != '\n') {
+        ch = toupper(ch);   // convert to uppercase
 
-        if (ch >= 'A' && ch <= 'Z') { // ensure it's a letter
-            int index = ch - 'A';      // map 'A'->0, 'B'->1, ...
-            total += points[index];
+        // Determine the Scrabble value of the letter
+        switch (ch) {
+            case 'A': case 'E': case 'I': case 'L': case 'N':
+            case 'O': case 'R': case 'S': case 'T': case 'U':
+                total += 1;
+                break;
+            case 'D': case 'G':
+                total += 2;
+                break;
+            case 'B': case 'C': case 'M': case 'P':
+                total += 3;
+                break;
+            case 'F': case 'H': case 'V': case 'W': case 'Y':
+                total += 4;
+                break;
+            case 'K':
+                total += 5;
+                break;
+            case 'J': case 'X':
+                total += 8;
+                break;
+            case 'Q': case 'Z':
+                total += 10;
+                break;
+            // Ignore any non‑letter characters (spaces, punctuation, etc.)
+            default:
+                break;
         }
-        // if the character is not a letter, we simply ignore it
     }
 
     printf("Scrabble value: %d\n", total);
