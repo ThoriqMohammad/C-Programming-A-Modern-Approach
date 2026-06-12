@@ -37,7 +37,7 @@ int main(void)
         tax = 37.50 + 3.0/100.0 * income;
     }
 
-    else if (income <= 2250)
+    else if (income <= 5250)
     {
         tax = 82.50 + 4.0/100.0 * income;
     }
